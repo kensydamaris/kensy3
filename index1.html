@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CR7 - El Grande Cristiano Ronaldo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #141414;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background: url('cr7-banner.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 120px 0;
+            border-bottom: 5px solid #f1c40f;
+            position: relative;
+        }
+        .header::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        .header h1 {
+            font-size: 4.5em;
+            font-weight: bold;
+            z-index: 2;
+            position: relative;
+        }
+        .header p {
+            font-size: 1.8em;
+            margin-top: 10px;
+            z-index: 2;
+            position: relative;
+        }
+        .navbar {
+            margin-bottom: 30px;
+        }
+        .navbar-brand {
+            color: #f1c40f !important;
+        }
+        .section {
+            background: #222;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .section h2 {
+            font-size: 2.5em;
+            border-bottom: 3px solid #f1c40f;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .bio p, .stats ul, .achievements ul {
+            font-size: 1.2em;
+        }
+        .stats ul, .achievements ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .stats li, .achievements li {
+            margin-bottom: 15px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .gallery img {
+            width: 30%;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            transition: transform 0.4s, box-shadow 0.4s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .btn-custom {
+            background-color: #f1c40f;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .btn-custom:hover {
+            background-color: #e0b90f;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">CR7 Fan Page</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#bio">Biografía</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#stats">Estadísticas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#achievements">Logros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallery">Galería</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header">
+        <h1>CR7 - El Grande Cristiano Ronaldo</h1>
+        <p>El astro del fútbol que ha conquistado el mundo</p>
+    </header>
+
+    <div class="container">
+        <section id="bio" class="section bio">
+            <h2>Biografía</h2>
+            <p>Cristiano Ronaldo dos Santos Aveiro, conocido como CR7, nació el 5 de febrero de 1985 en Funchal, Madeira, Portugal. Desde joven mostró un talento excepcional en el fútbol, lo que le llevó a jugar en los clubes más grandes del mundo. Con el Manchester United, el Real Madrid, la Juventus y el Al-Nassr, ha acumulado numerosos títulos y premios que destacan su habilidad y dedicación al deporte.</p>
+            <a href="https://es.wikipedia.org/wiki/Cristiano_Ronaldo" class="btn-custom" target="_blank">Leer más sobre CR7</a>
+        </section>
+
+        <section id="stats" class="section stats">
+            <h2>Estadísticas</h2>
+            <ul>
+                <li><strong>Goles en Clubes:</strong> 700+</li>
+                <li><strong>Goles en Selección:</strong> 123</li>
+                <li><strong>Balones de Oro:</strong> 5</li>
+                <li><strong>Copas del Mundo:</strong> 0</li>
+                <li><strong>Champions League:</strong> 5</li>
+            </ul>
+        </section>
+
+        <section id="achievements" class="section achievements">
+            <h2>Logros Destacados</h2>
+            <ul>
+                <li>Mejor Jugador del Año FIFA: 5 veces</li>
+                <li>Máximo Goleador de la Champions League</li>
+                <li>Jugador del Año en la Premier League: 2 veces</li>
+                <li>Máximo Goleador en la historia del Real Madrid</li>
+                <li>Jugador del Año en La Liga: 3 veces</li>
+            </ul>
+        </section>
+
+        <section id="gallery" class="section gallery">
+            <h2>Galería de Fotos</h2>
+            <div class="gallery">
+                <img src="imagenes/9.png" alt="Cristiano Ronaldo en acción">
+                <img src="imagenes/8.jpeg" alt="Cristiano Ronaldo celebrando">
+                <img src="imagenes/11.png" alt="Cristiano Ronaldo en el campo">
+                <img src="imagenes/10.png" alt="Cristiano Ronaldo">
+                <img src="imagenes/5.jpeg" alt="Cristiano Ronaldo">
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 CR7 Fan Page. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
